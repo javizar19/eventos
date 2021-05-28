@@ -33,17 +33,21 @@ const pintarListaFiguras = (listaFiguras, pType) => {
     for (let figure of listaFiguras) {
         if (pType == figure.type || pType=="all") {
             container.innerHTML += `
-                <div class="card mb-3" style="max-width: 540px;">
+                <div class="card mb-3" style="width: 290px; height: 500px  background: rgb(170,170,170);
+                background: -moz-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
+                background: -webkit-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
+                background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aaaaaa",endColorstr="#8b8b8b",GradientType=1); ">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="img/${figure.img}" width="100%" alt="tanos image">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title">${figure.name}</h5>
-                                <p class="card-text">${figure.description}</p>
-                                <p class="card-text"><small class="text-muted">Precio ${figure.price}€</small></p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
+                                <h2 class="card-title">${figure.name}</h2>
+                                <p class="card-text">Estado: ${figure.description}</p>
+                                <p class="card-text">Precio:  ${figure.price} €</p>
+                                <a href="#" class="btn btn-warning">Comprar ahora</a>
                             </div>
                         </div>
                     </div>

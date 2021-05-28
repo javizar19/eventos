@@ -52,6 +52,10 @@ body{
     width: 00px;
 }
 
+#navbarNav {
+    border: 4px double grey;
+}
+
 .contenedor .header{
     
     color: #fff;
@@ -95,6 +99,7 @@ body{
     grid-column-end: -1; */
     grid-area: footer;
 }
+
 
 .btn-group .button {
     background-color: #4CAF50; /* Green */
