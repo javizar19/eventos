@@ -63,6 +63,7 @@ body{
 .contenedor .contenido{
     /* grid-column: span 2; */
     grid-area: contenido;
+    width: 1400px;
 }
 .contenedor .sidebar{
     grid-column-start: 3;
@@ -77,7 +78,7 @@ body{
     grid-area: sidebar;
 }
 
-.contenedor .contenido #list-events {
+.contenedor .contenido .container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-area: auto;

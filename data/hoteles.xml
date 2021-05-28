@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hoteles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="hoteles.xsd">
+<hoteles>
   <!-- Info hotel 1 -->
   <hotel id="1"
          destacado="true">

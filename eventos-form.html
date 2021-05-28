@@ -54,7 +54,7 @@
 
    <!-- Tabla de datos  -->
    <main class="contenido">
-      <h2>Chat en vivo</h2>
+      <h2>Inserta un comentario para poder ver el link</h2>
       <div class="row">
          <div class="col-md-12">
             <!-- Lista de eventos  -->
@@ -62,8 +62,8 @@
                <thead>
                   <tr>
                      <th scope="col">ID</th>
-                     <th scope="col">Title</th>
-                     <th scope="col">Description</th>
+                     <th scope="col">Nombre</th>
+                     <th scope="col">Descripcion</th>
                      <th scope="col">Operaciones </th>
                      <th scope="col"><button onclick="nuevoEvento()" class="btn btn-success btn-sm"><i class="fas fa-plus"
                         aria-hidden="true">I</i></button> </th>
@@ -75,21 +75,28 @@
          </div>
       </div>
 
-     <div>
-         <p>
-             <label>Filtra por estilo:</label>
-             <select name="stars" id="filtrar-estrellas">
-                 <option value="" selected>Todos</option>
-                 <option value="1">1</option>
-                 <option value="2">2</option>
-                 <option value="3">3</option>
-                 <option value="4">4</option>
-                 <option value="5">5</option>
-             </select>
-             <button type="submit" id="search-btn" style="width: 10%;">Buscar</button>
-         </p>
-     </div>
-     <div id="list-events" class="container"></div> <!-- MAIN -->
+     <div class="position-relative py-5">
+      <div class="position-absolute top-50 start-50">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" value="all" autocomplete="off"
+                  checked>
+              <label class="btn btn-outline-primary" for="btnradio1">All</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" value="good"
+                  autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio2">Good character</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio3" value="bad" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio3">Bad character</label>
+          </div>
+      </div>
+  </div>
+
+
+  
+  <div id="card-container" class="container"></div>
+
+  
 
    </main>
 
