@@ -47,7 +47,7 @@ const pintarListaFiguras = (listaFiguras, pType) => {
                                 <h2 class="card-title">${figure.name}</h2>
                                 <p class="card-text">Estado: ${figure.description}</p>
                                 <p class="card-text">Precio:  ${figure.price} €</p>
-                                <a href="#" class="btn btn-warning">Comprar ahora</a>
+                                <a href="#" class="btn btn-warning" onclick="mostrarAlert()">Comprar ahora</a>
                             </div>
                         </div>
                     </div>
@@ -56,5 +56,15 @@ const pintarListaFiguras = (listaFiguras, pType) => {
         }
     }
 };
+
+function mostrarAlert() {
+    Swal.fire({
+      position: "center-center",
+      icon: "success",
+      title: "Curso añadido al carrito",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
 
 init();
