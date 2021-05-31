@@ -19,9 +19,9 @@ function check() {
     let userPw = document.getElementById('userPw');
 
     if(userName1.value == storedName1 && userPw.value == storedPw) {
-        alert('Logueado correctamente')
+        alert('Logueado correctamente');
        window.location.assign('eventos-form.html');
-       alert('Logueado correctamente')
+       alert('Logueado correctamente');
       
     }else {
         alert('Usuario no registrado');

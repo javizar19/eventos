@@ -16,12 +16,23 @@ function init() {
     }
 }
 
+window.calculateSumListener = function calculateSumListener() {
+    //Devuelve el valor del input #firstNumber
+    var stringA = document.getElementById("firstNumber").value;
+    //Devuelve el valor del input #secondNumber
+    var stringB = document.getElementById("secondNumber").value;
+
+    let result = parseInt(stringA) + parseInt(stringB);
+
+    document.getElementById("resultNumber").value = result;
+};
+
+
 function getFigures(pType) {
     // Petició asíncrona
     fetch('./data/figures.json')
         .then(response => response.json())
         .then((collection) => {
-            console.log("name", collection.nameCollection);
             pintarListaFiguras(collection.figures, pType);
 
         });
@@ -33,7 +44,7 @@ const pintarListaFiguras = (listaFiguras, pType) => {
     for (let figure of listaFiguras) {
         if (pType == figure.type || pType=="all") {
             container.innerHTML += `
-                <div class="card mb-3" style="width: 290px; height: 500px  background: rgb(170,170,170);
+                <div class="card mb-3" style="width: 340px; height: 500px  background: rgb(170,170,170);
                 background: -moz-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
                 background: -webkit-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
                 background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
@@ -44,10 +55,11 @@ const pintarListaFiguras = (listaFiguras, pType) => {
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h2 class="card-title">${figure.name}</h2>
-                                <p class="card-text">Estado: ${figure.description}</p>
-                                <p class="card-text">Precio:  ${figure.price} €</p>
-                                <a href="#" class="btn btn-warning" onclick="mostrarAlert()">Comprar ahora</a>
+                                <h class="card-title"style="font-size:17px; color: blue">${figure.name}</h5><br><br><br>
+                                <p class="card-text">Estado: ${figure.description}</p><br><br>
+                                <p class="card-text">Precio:  ${figure.price} €</p><br>
+                                <a href="#" class="btn btn-light" onclick="mostrarCompra()">Comprar ahora</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -57,14 +69,25 @@ const pintarListaFiguras = (listaFiguras, pType) => {
     }
 };
 
-function mostrarAlert() {
-    Swal.fire({
+  function mostrarCompra() {
+    swal({
       position: "center-center",
       icon: "success",
-      title: "Curso añadido al carrito",
-      showConfirmButton: false,
-      timer: 1500,
+      title: "Juego añadido al carrito",
+      text: "¿Desea finalizar su compra?",
+      buttons: ['No','Si'],
+      timer: 5000,
     });
+  }
+
+  function sucripcionMail(){
+    swal({
+        position: "center-center",
+        icon: "info",
+        title: "GRACIAS",
+        text: "Por suscribirte a nuestra newsletter",
+        showConfirmButton: false,
+      });
   }
 
 init();

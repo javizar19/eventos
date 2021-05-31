@@ -97,19 +97,33 @@ function eliminarEvento(id) {
         .then(response => {
             //response.json();
             getLista();
-            alert("Evento eliminado con éxito");
+            swal({
+                position: "center-center",
+                icon: "error",
+                title: "Comentario",
+                text: "eliminado correctamente",
+                buttons: "OK",
+              });
         })
         .then(response => console.log(response))
         .catch(error => error);
 }
 
 function guardarEvento() {
+    
+    swal({
+        position: "center-center",
+        icon: "success",
+        title: "Comentario",
+        text: "introducido correctamente",
+        buttons: "OK",
+      });
     const id = document.querySelector("#id").value;
     if (id == "")
         insertarEvento();
     else
         modificaEvento(id);
-
+        
     myModal.hide();
 }
 
@@ -117,4 +131,8 @@ function nuevoEvento() {
     document.querySelector("#id").value = "";
     document.querySelector("#form-data-evento").reset();
     myModal.show();
+}
+
+function insertarComentario() {
+
 }

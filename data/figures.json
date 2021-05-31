@@ -13,7 +13,7 @@
         },
         {
             "id":2,
-            "name":"Assassin's Creed Origins",
+            "name":"Assassin's Creed",
             "description":"Usado",
             "price":43.5,
             "type":"XBOX",
@@ -22,7 +22,7 @@
         {
             "id":3,
             "name":"XCOM 2",
-            "description":"Muy buen estado",
+            "description":"Buen estado",
             "price":33.5,
             "type":"PS4",
             "img":"xcom.webp"
@@ -53,7 +53,7 @@
         },
         {
             "id":7,
-            "name":"This War of Mine: The Little Ones",
+            "name":"This War of Mine",
             "description":"Como nuevo",
             "price":26.5,
             "type":"PS4",
@@ -76,7 +76,7 @@
         },
         {
             "id":10,
-            "name":"NBA 2K20 Legend Edition",
+            "name":"NBA 2K20 Legend",
             "description":"Muy poco uso",
             "price":43.5,
             "type":"PS4",
@@ -100,7 +100,7 @@
         },
         {
             "id":13,
-            "name":"Sniper: Ghost Warrior 3",
+            "name":"Sniper:Ghost Warrior 3",
             "description":"Como nuevo",
             "price":23.5,
             "type":"PS4",
@@ -108,7 +108,7 @@
         },
         {
             "id":14,
-            "name":"Ori and the Will of the Wisps",
+            "name":"Ori and the Will",
             "description":"Como nuevo",
             "price":23.5,
             "type":"XBOX",
@@ -124,7 +124,7 @@
         },
         {
             "id":16,
-            "name":"Sekiro: Shadows Die Twice",
+            "name":"Sekiro: Shadows Die",
             "description":"Sin abrir",
             "price":29.5,
             "type":"PS4",
