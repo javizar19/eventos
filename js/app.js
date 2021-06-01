@@ -86,6 +86,7 @@ const pintarListaFiguras = (listaFiguras, pType) => {
         icon: "info",
         title: "GRACIAS",
         text: "Por suscribirte a nuestra newsletter",
+        button: "Salir",
         showConfirmButton: false,
       });
   }
