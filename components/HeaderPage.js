@@ -45,6 +45,7 @@ class HeaderPage extends  HTMLElement{
                     <li class="nav-item">
                        <a class="nav-link" href="./webPages/html/nosotros.html">Nosotros</a>
                     </li>
+                    
 
                  </ul>
 

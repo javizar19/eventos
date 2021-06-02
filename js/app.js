@@ -38,12 +38,68 @@ function getFigures(pType) {
         });
 }
 
+
+
+function autocompletado () {
+    document.getElementById("demo").innerHTML = '';
+
+
+    // TODO poner todos los juegos aquí dentro!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    var preguntas = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "NBA",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+
+    var pal = document.getElementById("buscar-pal").value;
+    var tam = pal.length;
+    for(indice in preguntas){
+      var nombre = preguntas[indice];
+      var str = nombre.substring(0,tam);
+      if(pal.length <= nombre.length && pal.length != 0 && nombre.length != 0){
+        if(pal.toLowerCase() == str.toLowerCase()){
+          var node = document.createElement("LI");
+          var textnode = document.createTextNode(preguntas[indice]);
+          node.appendChild(textnode);
+          document.getElementById("demo").appendChild(node);
+        } else {
+          
+        }
+      }
+    }
+  }
+
+
+
 const pintarListaFiguras = (listaFiguras, pType) => {
     const container = document.getElementById("card-container");
     container.innerHTML = "";
     for (let figure of listaFiguras) {
         if (pType == figure.type || pType=="all") {
             container.innerHTML += `
+            
+            
                 <div class="card mb-3" style="width: 380px; height: 450px  background: rgb(170,170,170);
                 background: -moz-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
                 background: -webkit-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
@@ -57,7 +113,7 @@ const pintarListaFiguras = (listaFiguras, pType) => {
                             <div class="card-body">
                                 <h class="card-title"style="font-size:17px; color: blue">${figure.name}</h5><br><br><br>
                                 <p class="card-text">Estado: ${figure.description}</p><br><br>
-                                <p class="card-text">Precio:  ${figure.price} €</p><br>
+                                <p class="card-text">Precio:  ${figure.price} €</p><br><div>
                                 <a href="#" class="btn btn-light" onclick="mostrarCompra()">Comprar ahora</a>
                                 </div>
                             </div>
@@ -68,6 +124,25 @@ const pintarListaFiguras = (listaFiguras, pType) => {
         }
     }
 };
+
+// let total_element = document.getElementById('total'); // obtenemos el elemento
+
+// function sumar () {
+//   let total_value = parseInt(total_element.innerHTML);
+//   total_element.innerHTML = total_value + 1;
+// }
+
+
+// function restar () {
+//   let total_value = parseInt(total_element.innerHTML);
+//   if (total_value == 0) return; // validamos que el valor no sea menor a 0
+//   total_element.innerHTML = total_value - 1;
+// }
+
+// // asignamos funcion click a cada Div
+// document.getElementById('sumar').addEventListener('click', sumar);
+
+// document.getElementById('restar').addEventListener('click', restar);
 
   function mostrarCompra() {
     swal({

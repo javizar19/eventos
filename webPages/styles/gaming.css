@@ -1,0 +1,47 @@
+.nav a{
+
+    font-family: Raleway;
+    
+    color: white;
+    
+    font-size: 140%;
+    
+    letter-spacing: 5px;
+    
+    }
+    
+    .nav{
+    
+    width: 100%;
+    
+    background: black;
+    
+    list-style: none;
+    
+    margin-left: 0;
+    
+    padding: 0;
+    
+    }
+    
+    .nav li a:hover{
+    
+    background-color: #BDBDBD;
+    
+    display: block;
+    
+    }
+    
+    .nav li a{
+    
+    padding: 10px 20px;
+    
+    display: inline-block;
+    
+    }
+    
+    .nav li{
+    
+    display: inline-block;
+    
+    }
