@@ -1,3 +1,4 @@
+
 let name = document.getElementById('name1');
 let pw = document.getElementById('pw');
 
@@ -5,6 +6,12 @@ let pw = document.getElementById('pw');
 function store() {
     localStorage.setItem('name1', name1.value);
     localStorage.setItem('pw', pw.value);
+    alert('Registrado correctamente');
+    window.location.assign('login.html');
+    alert('Registrado correctamente');
+    window.location.assign('login.html');
+    alert('Registrado correctamente');
+
 }
 
 
@@ -24,6 +31,8 @@ function check() {
        alert('Logueado correctamente');
       
     }else {
+        alert('Usuario no registrado');
+        window.location.assign('login.html');
         alert('Usuario no registrado');
     }
 }

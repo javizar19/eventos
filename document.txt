@@ -1,0 +1,12 @@
+presentacion: explicas un poco lo que vas a ver en la página web y lo que la aplicación es capaz de realizar. cuando te logueas con tu usuario y contraseña donde te redirecciona y que hace cada función. Las cards que si clickas y tal. IDEA PRINCIPAL
+
+descripción: Las necesidades son las siguientes: Vender juegos más baratos para la gente que no tiene tanta economía. COMENTAS LA IDEA PRINCIPAL
+
+requisitos a desarrollar: 
+
+tecnologias: todo lo que se utiliza
+
+wireframes: 
+
+
+conclusión: AL FINAL QUERÍA AÑADIR TAL Y TAL

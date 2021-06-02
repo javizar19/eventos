@@ -43,7 +43,7 @@ class HeaderPage extends  HTMLElement{
                        <a class="nav-link" href="./webPages/html/gaming.html">Gaming</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="./webPages/html/nosotrosd.html">Nosotros</a>
+                       <a class="nav-link" href="./webPages/html/nosotros.html">Nosotros</a>
                     </li>
 
                  </ul>

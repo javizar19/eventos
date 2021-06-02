@@ -5,7 +5,7 @@ var myModal = new bootstrap.Modal(document.getElementById('modal-edicion'), {
     	
 
 function init() {
-    // Inicialment mostram totes les figures
+    // Inicialment mostram totes les juegos
     getFigures("all");
 
     let buttonsList = document.querySelectorAll('.btn-check');
@@ -30,10 +30,10 @@ window.calculateSumListener = function calculateSumListener() {
 
 function getFigures(pType) {
     // Petició asíncrona
-    fetch('./data/figures.json')
+    fetch('./data/juegos.json')
         .then(response => response.json())
         .then((collection) => {
-            pintarListaFiguras(collection.figures, pType);
+            pintarListaFiguras(collection.juegos, pType);
 
         });
 }
@@ -44,14 +44,14 @@ const pintarListaFiguras = (listaFiguras, pType) => {
     for (let figure of listaFiguras) {
         if (pType == figure.type || pType=="all") {
             container.innerHTML += `
-                <div class="card mb-3" style="width: 340px; height: 500px  background: rgb(170,170,170);
+                <div class="card mb-3" style="width: 380px; height: 450px  background: rgb(170,170,170);
                 background: -moz-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
                 background: -webkit-linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
                 background: linear-gradient(0deg, rgba(170,170,170,1) 0%, rgba(139,139,139,0) 100%);
                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aaaaaa",endColorstr="#8b8b8b",GradientType=1); ">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="img/${figure.img}" width="100%" alt="tanos image">
+                            <img src="img/${figure.img}" width="100%" height="100%"  alt="tanos image">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">

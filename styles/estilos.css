@@ -22,7 +22,7 @@ body{
 
 .contenedor{
     width: 90%;
-    max-width: 1400px;
+    max-width: 1650px;
     margin: 15px auto;
     display: grid;
     grid-gap: 20px;
@@ -69,18 +69,7 @@ body{
     grid-area: contenido;
     width: 1400px;
 }
-.contenedor .sidebar{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background: #Faa43d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* grid-row-start: 2;
-    grid-row-end: 4; */
-    min-height: 100px;
-    grid-area: sidebar;
-}
+
 
 .contenedor .contenido .container {
     display: grid;
