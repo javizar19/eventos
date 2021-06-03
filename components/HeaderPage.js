@@ -14,9 +14,9 @@ class HeaderPage extends  HTMLElement{
         <nav class="navbar navbar-expand-lg navbar-light">
            <div class="container-fluid">
               <a class="navbar-brand" href="#" id="logo">
-                 <img src="./img/seven-network-tv.svg" alt="LOGO" width="150" height="120">
+                 <img src="./img/seven-network-tv.svg" alt="LOGO" width="160" height="110">
               </a>
-              <a class="navbar-brand" href="#" style="font-size:40px;">Via7oyo</a>
+              <a class="navbar-brand" href="#" style="font-size:40px;">Zar&Company</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
@@ -41,9 +41,6 @@ class HeaderPage extends  HTMLElement{
                     </li>
                     <li class="nav-item">
                        <a class="nav-link" href="./webPages/html/gaming.html">Gaming</a>
-                    </li>
-                    <li class="nav-item">
-                       <a class="nav-link" href="./webPages/html/nosotros.html">Nosotros</a>
                     </li>
                     
 
