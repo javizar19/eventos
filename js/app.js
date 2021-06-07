@@ -44,32 +44,31 @@ function autocompletado () {
     document.getElementById("demo").innerHTML = '';
 
 
-    // TODO poner todos los juegos aquí dentro!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     var preguntas = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "NBA",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
+      "Yesterday Origins",
+      "Assasins' Creed",
+      "XCOM 2",
+      "Gravity Rush 2",
+      "WWE 2K Battlegrounds",
+      "Far Cry New Dawn",
+      "This War of Mine",
+      "Injustice 2",
+      "Space Junkies",
+      "Dead by Daylight",
+      "Call of Duty: Cold War",
+      "Sniper:Ghost Warrior 3",
+      "Ori and the Will",
+      "NBA 2K20 Legend",
+      "FIA European Truck",
+      "Sekiro: Shadows Die",
+      "Miitopia",
+      "Monster Hunter Rise",
+      "Doom",
+      "Xenoblade Chronicles 2",
+      "Fifa 21",
+      "Pes 21",
+      "Apex Legends"
     ];
 
     var pal = document.getElementById("buscar-pal").value;
